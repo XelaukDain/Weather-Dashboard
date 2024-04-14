@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="left">
+            <div id="search">
+                <form id="search-form" class="city-search">
+                    <h2>Search for a City</h2>
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    <button type="submit">Search</button>
+                </form>
+
+            </div>
+            <div id="popular-searches">
+            </div>
+        </section>
+
+        <section id="right">
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+                <div id="current-weather-info">
+                    <h3>City Name</h3>
+                    <p>Temperature: 75&deg;F</p>
+                    <p>Humidity: 50%</p>
+                    <p>Wind Speed: 5 mph</p>
+                    <p>UV Index: 3</p>
+                </div>
+
+            </section>
+            <div id="five-day-weather">
+                <h2>5-Day Forecast</h2>
+                <div id="five-day-weather-info">
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
