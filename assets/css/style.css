@@ -26,6 +26,11 @@ main {
     padding: 20px;
 }
 
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}   
+
 /* Style the right section */
 #left {
     flex: 20%;
@@ -45,6 +50,7 @@ main {
 .city-search input[type="text"] {
     width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -97,12 +103,36 @@ main {
     margin-bottom: 10px;
 }
 
-#popular-searches li button {
+#popular-searches button {
     padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
     font-size: 16px;
     background-color: #686868;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.day {
+    background: linear-gradient(to right, #2f455c, #313a64);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.day h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.day h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.day h6 {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
