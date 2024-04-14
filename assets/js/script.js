@@ -90,10 +90,15 @@ function updateCurrentWeather(data) {
   const temperature = data.list[0].main.temp;
   const humidity = data.list[0].main.humidity;
   const windSpeed = data.list[0].wind.speed;
+ const icon = data.list[0].weather[0].icon;
+ const date = data.list[0].dt_txt;
+
+ const iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
 
   // Update the UI with the weather data
   document.getElementById("current-weather-info").innerHTML = `
-        <h3>${cityName}</h3>
+        <h3>${cityName} (${date})</h3>
+        <img src="${iconUrl}">
         <p>Temperature: ${temperature}&deg;F</p>
         <p>Humidity: ${humidity}%</p>
         <p>Wind Speed: ${windSpeed} mph</p>
