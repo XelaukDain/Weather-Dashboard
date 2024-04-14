@@ -40,7 +40,7 @@ function handleFormSubmit(event) {
 }
 
 function getCity(city) {
-  const apiUrl = "http://api.openweathermap.org/geo/1.0/direct";
+  const apiUrl = "https://api.openweathermap.org/geo/1.0/direct";
   const apiKey = "2a2f858c09f81c75ff38f1e1844655a1";
 
   // Construct the API URL with the city name and API key
@@ -63,7 +63,7 @@ function getCity(city) {
 // Function to fetch weather data from OpenWeather API
 function getWeather(lat, lon) {
   // API endpoint and API key
-  const apiUrl = "http://api.openweathermap.org/data/2.5/forecast";
+  const apiUrl = "https://api.openweathermap.org/data/2.5/forecast";
   const apiKey = "2a2f858c09f81c75ff38f1e1844655a1";
 
   // Construct the API URL with the city name and API key
@@ -93,7 +93,7 @@ function updateCurrentWeather(data) {
  const icon = data.list[0].weather[0].icon;
  const date = data.list[0].dt_txt;
 
- const iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
+ const iconUrl = `https://openweathermap.org/img/w/${icon}.png`;
 
   // Update the UI with the weather data
   document.getElementById("current-weather-info").innerHTML = `
@@ -122,7 +122,7 @@ function updateForecast(data) {
       const forecastDescription = data.list[i].weather[0].description;
       const forecastWind = data.list[i].wind.speed;
 
-      const forecastIconUrl = `http://openweathermap.org/img/w/${forecastIcon}.png`;
+      const forecastIconUrl = `https://openweathermap.org/img/w/${forecastIcon}.png`;
 
       const card = document.createElement("div");
       card.classList.add("day");
